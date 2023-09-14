@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+    <style>
+        #profile{
+            margin-left:auto;
+            margin-right: auto;
+            width: 50%;
+        }
+        .container {
+            max-width: 25%;
+            margin-left:auto;
+            margin-right:auto;
+            padding: 3%;
+            background-color: rgba(255, 255, 255, 0.9);
+            border:solid black 1px;
+            display: grid;
+        }
+        .end{
+            background-color: rgb(231, 221, 221);
+            padding: 2%;
+        }
+        #cnl{
+            color: rgb(255, 255, 255);
+            background-color: rgb(255, 57, 57);
+            border-style: hidden;
+            padding: 2%;
+            width: 20%;
+            border-radius: 10%;
+        }
+        #fp{
+            margin-left: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h2>css_Task 6</h2>
+    <div class="container">
+        <img src="image.jpeg" alt="Profile Photo" id="profile"><br>
+        <form action=" " method="post">
+            <label for="username"><b>Username</b></label><br>
+            <input type="text" id="username" name="username" placeholder="Enter Username" style="width: 100%;" required><br><br>            
+            <label for="password"><b>Password</b></label><br>
+            <input type="password" id="password" name="password" placeholder="Enter password" style="width: 100%;" required><br><br>
+            <button type="submit" style="width: 100%; background-color: rgb(38, 177, 52); color: rgb(255, 255, 255); border: white; padding: 1%;" id="lgn">Login</button><br><br>
+            <input type="checkbox" id="remember-me" name="remember-me">
+            <label for="remember-me">Remember Me</label><br>
+            <div class="end">
+                <button type="button" id="cnl">Cancel</button>
+                <a href="#" id="fp">Forgot Password?</a>
+            </div>    
+        </form>
+    </div>
+</body>
+</html>
